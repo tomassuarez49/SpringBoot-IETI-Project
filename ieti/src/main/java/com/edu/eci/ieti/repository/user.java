@@ -1,6 +1,11 @@
 package com.edu.eci.ieti.repository;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+
+@Document(collection = "users") // Define el nombre de la colección
 public class user {
+    @Id
     private String id;
     private String name;
     private String email;
